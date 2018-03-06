@@ -111,7 +111,7 @@ public class Ladder
                                     cur_stack.pop();
 
                                 }
-                                return;
+                                break;
                             }
                             else {
                                 Stack<String> s = cur_stack;
