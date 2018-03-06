@@ -51,57 +51,37 @@ public class Ladder
                 System.out.println("\nWord #1 (or Enter to quit): ");
                 BufferedReader input = new BufferedReader(
                         new InputStreamReader(System.in));
-                //input.mark(10);
-                //int ch1 = input.read();
-                //if(ch1 == -1){
-                //    input_stat = false;
-                //    System.out.println("quitting");
-                //    break;
-                //}
-                //else{
-                //    input.reset();
-                //}
+
                 begin = input.readLine();
                 if(begin.length()<=0){
                     input_stat = false;
-                    System.out.println("quitting");
                     break;
                 }
 
-                System.out.println("\nWord #2 (or Enter to quit): ");
-                //input.mark(10);
-                //int ch2 = input.read();
-                //if(ch2 == -1){
-                //    input_stat = false;
-                //    System.out.println("quitting");
-                //    break;
-                //}
-                //else{
-                //    input.reset();
-                //}
+                System.out.println("Word #2 (or Enter to quit): ");
+
                 end = input.readLine();
                 if(end.length()<=0){
                     input_stat = false;
-                    System.out.println("quitting");
                     break;
                 }
                 // check existence
                 if(dic.contains(begin) == false || dic.contains(end) == false){
                     System.out.println("The two words must be found in the dictionary.\n");
                 }
-                else {
-                    if (begin.equals(end)){
-                        System.out.println("The two words must be different.\n");
-                    }
-                    else if (begin.length() != end.length()){
-                        System.out.println("The two words must be the same length.\n");
-                    }
-                    else break;
+                else if (begin.equals(end)){
+                    System.out.println("The two words must be different.\n");
                 }
+                else if (begin.length() != end.length()){
+                    System.out.println("The two words must be the same length.\n");
+                }
+                else break;
 
             }
             if(input_stat == false) break;
+
             int len = begin.length();
+
             // words already appeared in stacks
             HashSet wordpool = new HashSet();
             wordpool.add(begin);
@@ -113,24 +93,46 @@ public class Ladder
             boolean status = false;
 
             while (wordladder.isEmpty()!=true){
+                Stack<String> cur_stack = wordladder.poll();
+                //if(cur_stack.isEmpty()==true) return;
+                String cur_word = cur_stack.peek();
+
                 for(int i = 0;i<len;i++){
                     for(int j=97;j<=122; j++){
-                        Stack<String> cur_stack = wordladder.peek();
-                        String cur_word = cur_stack.peek();
                         String neighbor = cur_word;
+                        neighbor = neighbor.substring(0,i)+(char)j+neighbor.substring(i+1);
+                        if(wordpool.contains(neighbor)!=true && dic.contains(neighbor) == true) {
+                            wordpool.add(neighbor);
+                            if (end.equals(neighbor)) {
+                                status = true;
+                                //successfully find a path
+                                cur_stack.push(neighbor);
+                                System.out.println("A ladder from " + end + " to " + begin + ":\n");
+                                while (cur_stack.isEmpty() != true) {
+                                    System.out.println(cur_stack.peek());
+                                    cur_stack.pop();
+
+                                }
+                                break;
+                            }
+                            else {
+                                Stack<String> s = cur_stack;
+                                s.push(neighbor);
+                                wordladder.offer(s);
+                            }
+                        }
+
                     }
+
                 }
             }
-
-
-
+            if(status == false) {
+                System.out.println("No word ladder found from " + end + " back to " + begin + ".\n");
+            }
         }
+        System.out.println("Have a nice day.");
+
         return;
-//		try{
-//			BufferedReader in = new BufferedReader(
-//				new InputStreamReader(System.in));
-//			fname = in.readLine();
-//		}catch(IOException e){}
-//		System.in.println("You have entered: "+s);
+
 	}
 }
