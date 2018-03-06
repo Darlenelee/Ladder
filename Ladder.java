@@ -1,7 +1,9 @@
 import java.io.*;
 import java.util.Iterator;
 import java.util.HashSet;
-
+import java.util.LinkedList;
+import java.util.Queue;
+import java.util.Stack;
 
 public class Ladder
 {
@@ -99,8 +101,29 @@ public class Ladder
 
             }
             if(input_stat == false) break;
+            int len = begin.length();
             // words already appeared in stacks
             HashSet wordpool = new HashSet();
+            wordpool.add(begin);
+            // the original word
+            Stack<String> s1 = new Stack<String>();
+            Queue<Stack<String>> wordladder = new LinkedList<Stack<String>>();
+            s1.push(begin);
+            wordladder.offer(s1);
+            boolean status = false;
+
+            while (wordladder.isEmpty()!=true){
+                for(int i = 0;i<len;i++){
+                    for(int j=97;j<=122; j++){
+                        Stack<String> cur_stack = wordladder.peek();
+                        String cur_word = cur_stack.peek();
+                        String neighbor = cur_word;
+                    }
+                }
+            }
+
+
+
         }
         return;
 //		try{
