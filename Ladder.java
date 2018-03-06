@@ -31,21 +31,75 @@ public class Ladder
                 System.out.println("Unable to open that file.   Try again.\n");
             }
 		}
-         String line = "";
+		String line = "";
 		BufferedReader infile2 = new BufferedReader(infile1);
-        infile1.close();
+
         while((line = infile2.readLine()) != null){
 		    dic.add(line);
          //   System.out.println(line);
         }
-		infile2.close();
+        infile1.close();
+        infile2.close();
 
-        bool input_stat = true;
+        boolean input_stat = true;
         while(true){
             String begin = "";
             String end = "";
+            while(true){
+                System.out.println("\nWord #1 (or Enter to quit): ");
+                BufferedReader input = new BufferedReader(
+                        new InputStreamReader(System.in));
+                //input.mark(10);
+                //int ch1 = input.read();
+                //if(ch1 == -1){
+                //    input_stat = false;
+                //    System.out.println("quitting");
+                //    break;
+                //}
+                //else{
+                //    input.reset();
+                //}
+                begin = input.readLine();
+                if(begin.length()<=0){
+                    input_stat = false;
+                    System.out.println("quitting");
+                    break;
+                }
+
+                System.out.println("\nWord #2 (or Enter to quit): ");
+                //input.mark(10);
+                //int ch2 = input.read();
+                //if(ch2 == -1){
+                //    input_stat = false;
+                //    System.out.println("quitting");
+                //    break;
+                //}
+                //else{
+                //    input.reset();
+                //}
+                end = input.readLine();
+                if(end.length()<=0){
+                    input_stat = false;
+                    System.out.println("quitting");
+                    break;
+                }
+                // check existence
+                if(dic.contains(begin) == false || dic.contains(end) == false){
+                    System.out.println("The two words must be found in the dictionary.\n");
+                }
+                else if (begin.equals(end)){
+                    System.out.println("The two words must be different.\n");
+                }
+                else if (begin.length() != end.length()){
+                    System.out.println("The two words must be the same length.\n");
+                }
+                else break;
+
+            }
+            if(input_stat == false) break;
 
         }
+        return;
 //		try{
 //			BufferedReader in = new BufferedReader(
 //				new InputStreamReader(System.in));
