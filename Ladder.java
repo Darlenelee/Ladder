@@ -93,12 +93,10 @@ public class Ladder
             boolean status = false;
 
             while (wordladder.isEmpty()!=true){
-                Stack<String> cur_stack = wordladder.poll();
-                //if(cur_stack.isEmpty()==true) return;
-                String cur_word = cur_stack.peek();
-
                 for(int i = 0;i<len;i++){
                     for(int j=97;j<=122; j++){
+                        Stack<String> cur_stack = wordladder.peek();
+                        String cur_word = cur_stack.peek();
                         String neighbor = cur_word;
                         neighbor = neighbor.substring(0,i)+(char)j+neighbor.substring(i+1);
                         if(wordpool.contains(neighbor)!=true && dic.contains(neighbor) == true) {
@@ -107,13 +105,13 @@ public class Ladder
                                 status = true;
                                 //successfully find a path
                                 cur_stack.push(neighbor);
-                                System.out.println("A ladder from " + end + " to " + begin + ":\n");
+                                System.out.println("A ladder from " + end + " to " + begin + ":");
                                 while (cur_stack.isEmpty() != true) {
                                     System.out.println(cur_stack.peek());
                                     cur_stack.pop();
 
                                 }
-                                break;
+                                return;
                             }
                             else {
                                 Stack<String> s = cur_stack;
@@ -125,6 +123,7 @@ public class Ladder
                     }
 
                 }
+                wordladder.poll();
             }
             if(status == false) {
                 System.out.println("No word ladder found from " + end + " back to " + begin + ".\n");
