@@ -87,17 +87,20 @@ public class Ladder
                 if(dic.contains(begin) == false || dic.contains(end) == false){
                     System.out.println("The two words must be found in the dictionary.\n");
                 }
-                else if (begin.equals(end)){
-                    System.out.println("The two words must be different.\n");
+                else {
+                    if (begin.equals(end)){
+                        System.out.println("The two words must be different.\n");
+                    }
+                    else if (begin.length() != end.length()){
+                        System.out.println("The two words must be the same length.\n");
+                    }
+                    else break;
                 }
-                else if (begin.length() != end.length()){
-                    System.out.println("The two words must be the same length.\n");
-                }
-                else break;
 
             }
             if(input_stat == false) break;
-
+            // words already appeared in stacks
+            HashSet wordpool = new HashSet();
         }
         return;
 //		try{
