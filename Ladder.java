@@ -114,7 +114,7 @@ public class Ladder
                                 break;
                             }
                             else {
-                                Stack<String> s = cur_stack;
+                                Stack<String> s = (Stack<String>)cur_stack.clone();
                                 s.push(neighbor);
                                 wordladder.offer(s);
                             }
