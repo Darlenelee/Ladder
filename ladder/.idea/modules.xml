@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ladder.iml" filepath="$PROJECT_DIR$/.idea/modules/ladder.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ladder_main.iml" filepath="$PROJECT_DIR$/.idea/modules/ladder_main.iml" group="ladder" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ladder_test.iml" filepath="$PROJECT_DIR$/.idea/modules/ladder_test.iml" group="ladder" />
+    </modules>
+  </component>
+</project>
