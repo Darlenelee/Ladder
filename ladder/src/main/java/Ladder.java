@@ -59,10 +59,25 @@ public class Ladder
         return s1;
     }
 
+    public static String inputWord(int n){
+        System.out.println("\nWord #"+n+" (or Enter to quit): ");
+        BufferedReader input = new BufferedReader(
+                new InputStreamReader(System.in));
+        try {
+            String begin = input.readLine();
+            begin = lowercase(begin);
+            return begin;
+        }
+        catch(IOException e){
+            return new String("");
+        }
+
+
+    }
+
     public static void main(String[] args) throws IOException
 	{
 		HashSet<String> dic = new HashSet<String>();
-
 		String fname = "";
 		FileReader infile1 = null;
 		while(true){
@@ -71,23 +86,14 @@ public class Ladder
                 BufferedReader in = new BufferedReader(
 					new InputStreamReader(System.in));
 			    fname = in.readLine();
-
 			    // create a file object with filename
                 infile1 = new FileReader(fname);
                 break;
-            }catch(FileNotFoundException ex){
-                System.out.println("Unable to open that file.   Try again.\n");
-            }
-            catch(IOException e){
-                System.out.println("Unable to open that file.   Try again.\n");
-            }
+            }catch(FileNotFoundException ex){ System.out.println("Unable to open that file.   Try again.\n"); }
 		}
 		String line = "";
 		BufferedReader infile2 = new BufferedReader(infile1);
-
-        while((line = infile2.readLine()) != null){
-		    dic.add(line);
-        }
+        while((line = infile2.readLine()) != null){ dic.add(line); }
         infile1.close();
         infile2.close();
 
@@ -96,47 +102,29 @@ public class Ladder
             String begin = "";
             String end = "";
             while(true){
-                System.out.println("\nWord #1 (or Enter to quit): ");
-                BufferedReader input = new BufferedReader(
-                        new InputStreamReader(System.in));
-
-                begin = input.readLine();
+                begin = inputWord(1);
                 if(begin.length()<=0){
                     input_stat = false;
                     break;
                 }
-
-                System.out.println("Word #2 (or Enter to quit): ");
-
-                end = input.readLine();
+                end = inputWord(2);
                 if(end.length()<=0){
                     input_stat = false;
                     break;
                 }
-                begin = lowercase(begin);
-                end = lowercase(end);
                 // check existence
-                if(!dic.contains(begin)|| !dic.contains(end)){
-                    System.out.println("The two words must be found in the dictionary.\n");
-                }
-                else if (begin.equals(end)){
-                    System.out.println("The two words must be different.\n");
-                }
-                else if (begin.length() != end.length()){
-                    System.out.println("The two words must be the same length.\n");
-                }
+                if(!dic.contains(begin)|| !dic.contains(end)){ System.out.println("The two words must be found in the dictionary.\n"); }
+                else if (begin.equals(end)){ System.out.println("The two words must be different.\n"); }
+                else if (begin.length() != end.length()){ System.out.println("The two words must be the same length.\n"); }
                 else break;
 
             }
             if(!input_stat) break;
 
             int len = begin.length();
-            Ladder wl = new Ladder();
-
-            Stack<String> result = wl.findLadder(dic, begin, end, len);
-            if (result.isEmpty()) {
-                System.out.println("No word ladder found from " + end + " back to " + begin + ".\n");
-            } else {
+            Stack<String> result = findLadder(dic, begin, end, len);
+            if (result.isEmpty()) { System.out.println("No word ladder found from " + end + " back to " + begin + ".\n"); }
+            else {
                 System.out.println("A ladder from " + end + " to " + begin + ":");
                 while (!result.isEmpty()) {
                     System.out.println(result.peek());
@@ -144,7 +132,6 @@ public class Ladder
                 }
             }
         }
-
         System.out.println("Have a nice day.");
 	}
 }

@@ -75,11 +75,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Ladder.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Ladder.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Ladder.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="351">
-              <caret line="114" column="17" lean-forward="false" selection-start-line="114" selection-start-column="17" selection-end-line="114" selection-end-column="17" />
+            <state relative-caret-position="345">
+              <caret line="72" column="9" lean-forward="true" selection-start-line="62" selection-start-column="8" selection-end-line="72" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#lowercase#0;class#Ladder#0" expanded="false" />
@@ -87,17 +87,18 @@
                 <element signature="e#707#715#0" expanded="true" />
                 <element signature="e#813#821#0" expanded="true" />
                 <element signature="e#881#896#0" expanded="true" />
-                <element signature="e#2171#2179#0" expanded="true" />
+                <element signature="method#main#0;class#Ladder#0" expanded="false" />
+                <element signature="e#2599#2607#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LadderTest.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="LadderTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/LadderTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1092">
-              <caret line="135" column="35" lean-forward="false" selection-start-line="135" selection-start-column="35" selection-end-line="135" selection-end-column="35" />
+            <state relative-caret-position="672">
+              <caret line="137" column="4" lean-forward="false" selection-start-line="137" selection-start-column="4" selection-end-line="137" selection-end-column="4" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#292#300#0" expanded="true" />
@@ -492,8 +493,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/test/java/findTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/LadderTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/Ladder.java" />
+        <option value="$PROJECT_DIR$/src/test/java/LadderTest.java" />
       </list>
     </option>
   </component>
@@ -1123,7 +1124,7 @@
       <option name="presentableId" value="Default" />
       <updated>1520594189934</updated>
       <workItem from="1520594192003" duration="1039000" />
-      <workItem from="1520610063838" duration="14345000" />
+      <workItem from="1520610063838" duration="15267000" />
     </task>
     <servers />
   </component>
@@ -1160,7 +1161,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15384000" />
+    <option name="totallyTimeSpent" value="16306000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1191,7 +1192,7 @@
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22249094" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22249094" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297568" sideWeight="0.5054432" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32889965" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1249,7 +1250,7 @@
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="14" />
+      <option name="time" value="16" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1273,7 +1274,8 @@
             <element signature="e#707#715#0" expanded="true" />
             <element signature="e#813#821#0" expanded="true" />
             <element signature="e#881#896#0" expanded="true" />
-            <element signature="e#2171#2179#0" expanded="true" />
+            <element signature="method#main#0;class#Ladder#0" expanded="false" />
+            <element signature="e#2599#2607#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1328,10 +1330,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Ladder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="72" column="9" lean-forward="true" selection-start-line="62" selection-start-column="8" selection-end-line="72" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#lowercase#0;class#Ladder#0" expanded="false" />
+            <element signature="method#findLadder#0;class#Ladder#0" expanded="false" />
+            <element signature="e#707#715#0" expanded="true" />
+            <element signature="e#813#821#0" expanded="true" />
+            <element signature="e#881#896#0" expanded="true" />
+            <element signature="method#main#0;class#Ladder#0" expanded="false" />
+            <element signature="e#2599#2607#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/LadderTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1092">
-          <caret line="135" column="35" lean-forward="false" selection-start-line="135" selection-start-column="35" selection-end-line="135" selection-end-column="35" />
+        <state relative-caret-position="672">
+          <caret line="137" column="4" lean-forward="false" selection-start-line="137" selection-start-column="4" selection-end-line="137" selection-end-column="4" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#292#300#0" expanded="true" />
@@ -1346,22 +1365,6 @@
             <element signature="e#3213#3221#0" expanded="true" />
             <element signature="e#3839#3847#0" expanded="true" />
             <element signature="e#3970#3978#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Ladder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="114" column="17" lean-forward="false" selection-start-line="114" selection-start-column="17" selection-end-line="114" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#lowercase#0;class#Ladder#0" expanded="false" />
-            <element signature="method#findLadder#0;class#Ladder#0" expanded="false" />
-            <element signature="e#707#715#0" expanded="true" />
-            <element signature="e#813#821#0" expanded="true" />
-            <element signature="e#881#896#0" expanded="true" />
-            <element signature="e#2171#2179#0" expanded="true" />
           </folding>
         </state>
       </provider>
