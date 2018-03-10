@@ -1,5 +1,4 @@
 import java.io.*;
-import java.util.Iterator;
 import java.util.HashSet;
 import java.util.LinkedList;
 import java.util.Queue;
@@ -7,10 +6,49 @@ import java.util.Stack;
 
 public class Ladder
 {
-	public static void main(String[] args) throws IOException
-	{
-		HashSet dic = new HashSet();
+	public static Stack<String> findLadder(HashSet dic, String begin, String end, int len){
+        // words already appeared in stacks
+        HashSet<String> wordpool = new HashSet<String>();
+        wordpool.add(begin);
+        // the original word
+        Stack<String> s1 = new Stack<String>();
+        Queue<Stack<String>> wordladder = new LinkedList<Stack<String>>();
+        s1.push(begin);
+        wordladder.offer(s1);
 
+        while (!wordladder.isEmpty()){
+            for(int i = 0;i<len;i++){
+                for(int j=97;j<=122; j++){
+                    Stack<String> cur_stack = wordladder.peek();
+                    String cur_word = cur_stack.peek();
+                    String neighbor = cur_word;
+                    neighbor = neighbor.substring(0,i)+(char)j+neighbor.substring(i+1);
+                    if((!wordpool.contains(neighbor)) && (dic.contains(neighbor))) {
+                        wordpool.add(neighbor);
+                        if (end.equals(neighbor)) {
+                            //successfully find a path
+                            cur_stack.push(neighbor);
+                            return cur_stack;
+                        }
+                        else {
+                            Stack<String> s = (Stack<String>)cur_stack.clone();
+                            s.push(neighbor);
+                            wordladder.offer(s);
+                        }
+                    }
+
+                }
+
+            }
+            wordladder.poll();
+        }
+        s1.pop();
+        return s1;
+    }
+
+    public static void main(String[] args) throws IOException
+	{
+		HashSet<String> dic = new HashSet<String>();
 
 		String fname = "";
 	//	Reader infile = null;
@@ -66,7 +104,7 @@ public class Ladder
                     break;
                 }
                 // check existence
-                if(dic.contains(begin) == false || dic.contains(end) == false){
+                if(!dic.contains(begin)|| !dic.contains(end)){
                     System.out.println("The two words must be found in the dictionary.\n");
                 }
                 else if (begin.equals(end)){
@@ -78,60 +116,22 @@ public class Ladder
                 else break;
 
             }
-            if(input_stat == false) break;
+            if(!input_stat) break;
 
             int len = begin.length();
-
-            // words already appeared in stacks
-            HashSet wordpool = new HashSet();
-            wordpool.add(begin);
-            // the original word
-            Stack<String> s1 = new Stack<String>();
-            Queue<Stack<String>> wordladder = new LinkedList<Stack<String>>();
-            s1.push(begin);
-            wordladder.offer(s1);
-            boolean status = false;
-
-            while (wordladder.isEmpty()!=true){
-                for(int i = 0;i<len;i++){
-                    for(int j=97;j<=122; j++){
-                        Stack<String> cur_stack = wordladder.peek();
-                        String cur_word = cur_stack.peek();
-                        String neighbor = cur_word;
-                        neighbor = neighbor.substring(0,i)+(char)j+neighbor.substring(i+1);
-                        if(wordpool.contains(neighbor)!=true && dic.contains(neighbor) == true) {
-                            wordpool.add(neighbor);
-                            if (end.equals(neighbor)) {
-                                status = true;
-                                //successfully find a path
-                                cur_stack.push(neighbor);
-                                System.out.println("A ladder from " + end + " to " + begin + ":");
-                                while (cur_stack.isEmpty() != true) {
-                                    System.out.println(cur_stack.peek());
-                                    cur_stack.pop();
-
-                                }
-                                break;
-                            }
-                            else {
-                                Stack<String> s = (Stack<String>)cur_stack.clone();
-                                s.push(neighbor);
-                                wordladder.offer(s);
-                            }
-                        }
-
-                    }
-
-                }
-                wordladder.poll();
-            }
-            if(status == false) {
+            Ladder wl = new Ladder();
+            Stack<String> result = wl.findLadder(dic, begin, end, len);
+            if (result.isEmpty()) {
                 System.out.println("No word ladder found from " + end + " back to " + begin + ".\n");
+            } else {
+                System.out.println("A ladder from " + end + " to " + begin + ":");
+                while (!result.isEmpty()) {
+                    System.out.println(result.peek());
+                    result.pop();
+                }
             }
         }
+
         System.out.println("Have a nice day.");
-
-        return;
-
 	}
 }
