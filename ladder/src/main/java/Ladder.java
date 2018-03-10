@@ -6,7 +6,20 @@ import java.util.Stack;
 
 public class Ladder
 {
-	public static Stack<String> findLadder(HashSet dic, String begin, String end, int len){
+	public static String lowercase(String str){
+        char[] chars = str.toCharArray();
+        int len = str.length();
+        for(int i = 0; i<len; i++){
+            char c = chars[i];
+            if(Character.isUpperCase(c)) {
+                chars[i] = Character.toLowerCase(c);
+            }
+        }
+        String str_new = new String(chars);
+        return str_new;
+    }
+
+    public static Stack<String> findLadder(HashSet dic, String begin, String end, int len){
         // words already appeared in stacks
         HashSet<String> wordpool = new HashSet<String>();
         wordpool.add(begin);
@@ -58,7 +71,8 @@ public class Ladder
                 BufferedReader in = new BufferedReader(
 					new InputStreamReader(System.in));
 			    fname = in.readLine();
-                // create a file object with filename
+
+			    // create a file object with filename
                 infile1 = new FileReader(fname);
                 break;
             }catch(FileNotFoundException ex){
@@ -99,6 +113,8 @@ public class Ladder
                     input_stat = false;
                     break;
                 }
+                begin = lowercase(begin);
+                end = lowercase(end);
                 // check existence
                 if(!dic.contains(begin)|| !dic.contains(end)){
                     System.out.println("The two words must be found in the dictionary.\n");
@@ -116,6 +132,7 @@ public class Ladder
 
             int len = begin.length();
             Ladder wl = new Ladder();
+
             Stack<String> result = wl.findLadder(dic, begin, end, len);
             if (result.isEmpty()) {
                 System.out.println("No word ladder found from " + end + " back to " + begin + ".\n");

@@ -12,6 +12,9 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/ladder$Ladder.coverage" NAME="Ladder Coverage Results" MODIFIED="1520704698381" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+  </component>
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -72,27 +75,29 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Ladder.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Ladder.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/Ladder.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="61">
-              <caret line="50" column="0" lean-forward="false" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
+            <state relative-caret-position="351">
+              <caret line="114" column="17" lean-forward="false" selection-start-line="114" selection-start-column="17" selection-end-line="114" selection-end-column="17" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#323#331#0" expanded="true" />
-                <element signature="e#429#437#0" expanded="true" />
-                <element signature="e#497#512#0" expanded="true" />
-                <element signature="e#1787#1795#0" expanded="true" />
+                <element signature="method#lowercase#0;class#Ladder#0" expanded="false" />
+                <element signature="method#findLadder#0;class#Ladder#0" expanded="false" />
+                <element signature="e#707#715#0" expanded="true" />
+                <element signature="e#813#821#0" expanded="true" />
+                <element signature="e#881#896#0" expanded="true" />
+                <element signature="e#2171#2179#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LadderTest.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="LadderTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/LadderTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="19" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="23" />
+            <state relative-caret-position="1092">
+              <caret line="135" column="35" lean-forward="false" selection-start-line="135" selection-start-column="35" selection-end-line="135" selection-end-column="35" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#292#300#0" expanded="true" />
@@ -487,8 +492,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/test/java/findTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Ladder.java" />
         <option value="$PROJECT_DIR$/src/test/java/LadderTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Ladder.java" />
       </list>
     </option>
   </component>
@@ -881,29 +886,6 @@
             <path>
               <item name="ladder" type="b2602c69:ProjectViewProjectNode" />
               <item name="ladder" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name=".gradle" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ladder" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ladder" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ladder" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ladder" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-              <item name="production" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ladder" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ladder" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-              <item name="production" type="462c0819:PsiDirectoryNode" />
-              <item name="classes" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ladder" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ladder" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -916,21 +898,7 @@
               <item name="ladder" type="b2602c69:ProjectViewProjectNode" />
               <item name="ladder" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ladder" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ladder" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="ladder" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ladder" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -970,7 +938,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.LadderTest">
+  <component name="RunManager" selected="Application.Ladder">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -1134,10 +1102,10 @@
     </list>
     <recent_temporary>
       <list size="4">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.LadderTest" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.LadderTest.findLadder2" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.LadderTest.findLadder" />
-        <item index="3" class="java.lang.String" itemvalue="Application.Ladder" />
+        <item index="0" class="java.lang.String" itemvalue="Application.Ladder" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.LadderTest" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.LadderTest.findLadder2" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.LadderTest.findLadder" />
       </list>
     </recent_temporary>
   </component>
@@ -1155,23 +1123,11 @@
       <option name="presentableId" value="Default" />
       <updated>1520594189934</updated>
       <workItem from="1520594192003" duration="1039000" />
-      <workItem from="1520610063838" duration="12694000" />
+      <workItem from="1520610063838" duration="14345000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="LadderTest - 2018.03.11 at 01h 20m 54s.xml">
-      <configuration name="LadderTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="LadderTest - 2018.03.11 at 01h 21m 12s.xml">
-      <configuration name="LadderTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="LadderTest - 2018.03.11 at 01h 22m 10s.xml">
-      <configuration name="LadderTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="LadderTest - 2018.03.11 at 01h 30m 10s.xml">
-      <configuration name="LadderTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="LadderTest - 2018.03.11 at 01h 30m 34s.xml">
       <configuration name="LadderTest" configurationId="JUnit" />
     </history-entry>
@@ -1187,12 +1143,24 @@
     <history-entry file="LadderTest - 2018.03.11 at 01h 33m 46s.xml">
       <configuration name="LadderTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="LadderTest_findLadder2 - 2018.03.11 at 01h 22m 00s.xml">
-      <configuration name="LadderTest.findLadder2" configurationId="JUnit" />
+    <history-entry file="LadderTest - 2018.03.11 at 01h 33m 58s.xml">
+      <configuration name="LadderTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LadderTest - 2018.03.11 at 01h 46m 56s.xml">
+      <configuration name="LadderTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LadderTest - 2018.03.11 at 01h 49m 02s.xml">
+      <configuration name="LadderTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LadderTest - 2018.03.11 at 01h 52m 05s.xml">
+      <configuration name="LadderTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LadderTest - 2018.03.11 at 01h 54m 05s.xml">
+      <configuration name="LadderTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13733000" />
+    <option name="totallyTimeSpent" value="15384000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1208,28 +1176,29 @@
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31197098" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24964234" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.43772674" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32889965" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32889965" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22249094" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22249094" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297568" sideWeight="0.5054432" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32889965" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2167382" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31197098" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3297568" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24964234" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297568" sideWeight="0.49455675" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.43772674" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1299,10 +1268,12 @@
           <caret line="21" column="54" lean-forward="false" selection-start-line="21" selection-start-column="54" selection-end-line="21" selection-end-column="54" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#323#331#0" expanded="true" />
-            <element signature="e#429#437#0" expanded="true" />
-            <element signature="e#497#512#0" expanded="true" />
-            <element signature="e#1787#1795#0" expanded="true" />
+            <element signature="method#lowercase#0;class#Ladder#0" expanded="false" />
+            <element signature="method#findLadder#0;class#Ladder#0" expanded="false" />
+            <element signature="e#707#715#0" expanded="true" />
+            <element signature="e#813#821#0" expanded="true" />
+            <element signature="e#881#896#0" expanded="true" />
+            <element signature="e#2171#2179#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1357,24 +1328,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Ladder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="61">
-          <caret line="50" column="0" lean-forward="false" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#323#331#0" expanded="true" />
-            <element signature="e#429#437#0" expanded="true" />
-            <element signature="e#497#512#0" expanded="true" />
-            <element signature="e#1787#1795#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/LadderTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="19" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="23" />
+        <state relative-caret-position="1092">
+          <caret line="135" column="35" lean-forward="false" selection-start-line="135" selection-start-column="35" selection-end-line="135" selection-end-column="35" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#292#300#0" expanded="true" />
@@ -1389,6 +1346,22 @@
             <element signature="e#3213#3221#0" expanded="true" />
             <element signature="e#3839#3847#0" expanded="true" />
             <element signature="e#3970#3978#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Ladder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="114" column="17" lean-forward="false" selection-start-line="114" selection-start-column="17" selection-end-line="114" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#lowercase#0;class#Ladder#0" expanded="false" />
+            <element signature="method#findLadder#0;class#Ladder#0" expanded="false" />
+            <element signature="e#707#715#0" expanded="true" />
+            <element signature="e#813#821#0" expanded="true" />
+            <element signature="e#881#896#0" expanded="true" />
+            <element signature="e#2171#2179#0" expanded="true" />
           </folding>
         </state>
       </provider>
