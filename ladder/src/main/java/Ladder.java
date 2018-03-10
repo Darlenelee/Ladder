@@ -51,7 +51,6 @@ public class Ladder
 		HashSet<String> dic = new HashSet<String>();
 
 		String fname = "";
-	//	Reader infile = null;
 		FileReader infile1 = null;
 		while(true){
             try{
@@ -59,10 +58,8 @@ public class Ladder
                 BufferedReader in = new BufferedReader(
 					new InputStreamReader(System.in));
 			    fname = in.readLine();
-
                 // create a file object with filename
                 infile1 = new FileReader(fname);
-         //       infile = infile1;
                 break;
             }catch(FileNotFoundException ex){
                 System.out.println("Unable to open that file.   Try again.\n");
@@ -76,7 +73,6 @@ public class Ladder
 
         while((line = infile2.readLine()) != null){
 		    dic.add(line);
-         //   System.out.println(line);
         }
         infile1.close();
         infile2.close();
