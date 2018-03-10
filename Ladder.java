@@ -10,10 +10,7 @@ public class Ladder
 	public static void main(String[] args) throws IOException
 	{
 		HashSet dic = new HashSet();
-
-
 		String fname = "";
-	//	Reader infile = null;
 		FileReader infile1 = null;
 		while(true){
             try{
@@ -21,15 +18,10 @@ public class Ladder
                 BufferedReader in = new BufferedReader(
 					new InputStreamReader(System.in));
 			    fname = in.readLine();
-
                 // create a file object with filename
                 infile1 = new FileReader(fname);
-         //       infile = infile1;
                 break;
             }catch(FileNotFoundException ex){
-                System.out.println("Unable to open that file.   Try again.\n");
-            }
-            catch(IOException e){
                 System.out.println("Unable to open that file.   Try again.\n");
             }
 		}
@@ -37,8 +29,7 @@ public class Ladder
 		BufferedReader infile2 = new BufferedReader(infile1);
 
         while((line = infile2.readLine()) != null){
-		    dic.add(line);
-         //   System.out.println(line);
+            dic.add(line);
         }
         infile1.close();
         infile2.close();
@@ -59,7 +50,6 @@ public class Ladder
                 }
 
                 System.out.println("Word #2 (or Enter to quit): ");
-
                 end = input.readLine();
                 if(end.length()<=0){
                     input_stat = false;
@@ -79,7 +69,6 @@ public class Ladder
 
             }
             if(input_stat == false) break;
-
             int len = begin.length();
 
             // words already appeared in stacks
@@ -109,7 +98,6 @@ public class Ladder
                                 while (cur_stack.isEmpty() != true) {
                                     System.out.println(cur_stack.peek());
                                     cur_stack.pop();
-
                                 }
                                 break;
                             }
@@ -119,9 +107,7 @@ public class Ladder
                                 wordladder.offer(s);
                             }
                         }
-
                     }
-
                 }
                 wordladder.poll();
             }
@@ -130,8 +116,5 @@ public class Ladder
             }
         }
         System.out.println("Have a nice day.");
-
-        return;
-
 	}
 }
