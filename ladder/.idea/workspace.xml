@@ -91,8 +91,8 @@
       <file leaf-file-name="LadderTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/LadderTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="53">
-              <caret line="36" column="25" lean-forward="true" selection-start-line="36" selection-start-column="25" selection-end-line="36" selection-end-column="25" />
+            <state relative-caret-position="120">
+              <caret line="8" column="19" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="23" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#292#300#0" expanded="true" />
@@ -100,7 +100,13 @@
                 <element signature="e#1047#1055#0" expanded="true" />
                 <element signature="e#1319#1327#0" expanded="true" />
                 <element signature="e#1945#1953#0" expanded="true" />
-                <element signature="e#2076#2084#0" expanded="true" />
+                <element signature="e#2072#2080#0" expanded="true" />
+                <element signature="e#2314#2322#0" expanded="true" />
+                <element signature="e#2940#2948#0" expanded="true" />
+                <element signature="e#3071#3079#0" expanded="true" />
+                <element signature="e#3213#3221#0" expanded="true" />
+                <element signature="e#3839#3847#0" expanded="true" />
+                <element signature="e#3970#3978#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -1149,14 +1155,11 @@
       <option name="presentableId" value="Default" />
       <updated>1520594189934</updated>
       <workItem from="1520594192003" duration="1039000" />
-      <workItem from="1520610063838" duration="12262000" />
+      <workItem from="1520610063838" duration="12694000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="LadderTest - 2018.03.11 at 01h 20m 02s.xml">
-      <configuration name="LadderTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="LadderTest - 2018.03.11 at 01h 20m 54s.xml">
       <configuration name="LadderTest" configurationId="JUnit" />
     </history-entry>
@@ -1166,21 +1169,30 @@
     <history-entry file="LadderTest - 2018.03.11 at 01h 22m 10s.xml">
       <configuration name="LadderTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="LadderTest_findLadder - 2018.03.11 at 01h 10m 15s.xml">
-      <configuration name="LadderTest.findLadder" configurationId="JUnit" />
+    <history-entry file="LadderTest - 2018.03.11 at 01h 30m 10s.xml">
+      <configuration name="LadderTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="LadderTest_findLadder - 2018.03.11 at 01h 10m 35s.xml">
-      <configuration name="LadderTest.findLadder" configurationId="JUnit" />
+    <history-entry file="LadderTest - 2018.03.11 at 01h 30m 34s.xml">
+      <configuration name="LadderTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="LadderTest_findLadder - 2018.03.11 at 01h 11m 02s.xml">
-      <configuration name="LadderTest.findLadder" configurationId="JUnit" />
+    <history-entry file="LadderTest - 2018.03.11 at 01h 32m 23s.xml">
+      <configuration name="LadderTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LadderTest - 2018.03.11 at 01h 32m 27s.xml">
+      <configuration name="LadderTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LadderTest - 2018.03.11 at 01h 32m 31s.xml">
+      <configuration name="LadderTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LadderTest - 2018.03.11 at 01h 33m 46s.xml">
+      <configuration name="LadderTest" configurationId="JUnit" />
     </history-entry>
     <history-entry file="LadderTest_findLadder2 - 2018.03.11 at 01h 22m 00s.xml">
       <configuration name="LadderTest.findLadder2" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13301000" />
+    <option name="totallyTimeSpent" value="13733000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1361,8 +1373,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/LadderTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="53">
-          <caret line="36" column="25" lean-forward="true" selection-start-line="36" selection-start-column="25" selection-end-line="36" selection-end-column="25" />
+        <state relative-caret-position="120">
+          <caret line="8" column="19" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="23" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#292#300#0" expanded="true" />
@@ -1370,7 +1382,13 @@
             <element signature="e#1047#1055#0" expanded="true" />
             <element signature="e#1319#1327#0" expanded="true" />
             <element signature="e#1945#1953#0" expanded="true" />
-            <element signature="e#2076#2084#0" expanded="true" />
+            <element signature="e#2072#2080#0" expanded="true" />
+            <element signature="e#2314#2322#0" expanded="true" />
+            <element signature="e#2940#2948#0" expanded="true" />
+            <element signature="e#3071#3079#0" expanded="true" />
+            <element signature="e#3213#3221#0" expanded="true" />
+            <element signature="e#3839#3847#0" expanded="true" />
+            <element signature="e#3970#3978#0" expanded="true" />
           </folding>
         </state>
       </provider>
