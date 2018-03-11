@@ -120,7 +120,6 @@ public class Ladder
 
             }
             if(!input_stat) break;
-
             int len = begin.length();
             Stack<String> result = findLadder(dic, begin, end, len);
             if (result.isEmpty()) { System.out.println("No word ladder found from " + end + " back to " + begin + ".\n"); }
